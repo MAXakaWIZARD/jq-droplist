@@ -1,0 +1,25 @@
+{
+    "name": "maxakawizard/jq-droplist",
+    "version": "0.1.0",
+    "authors": [
+        "MAXakaWIZARD <maxakawizard@gmail.com>"
+    ],
+    "description": "Nice interactive droplist",
+    "main": "index.html",
+    "moduleType": [
+        "amd",
+        "es6"
+    ],
+    "keywords": [
+        "droplist"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/MAXakaWIZARD/jq-droplist",
+    "private": false,
+    "ignore": [
+    ],
+    "dependencies": {
+        "jquery": "2.1.*",
+        "normalize.css": "3.0.*"
+    }
+}
