@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Calibri';
+    url('../fonts/trebuchet-ms-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     padding: 10px;
+    font-family: 'Calibri';
 }
 
 .test-instruction-container {
@@ -13,8 +21,111 @@ body {
     -moz-border-radius: 5px;
     border-radius: 5px;
     padding: 10px;
+    line-height: 24px;
 }
 
 .check-button-container {
     margin-top: 10px;
+}
+
+.jq-droplist-container {
+    display: inline-block;
+    position: relative;
+}
+
+.jq-droplist-select {
+    position: relative;
+    vertical-align: -50%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    min-width: 50px;
+    height: 15px;
+    line-height: 15px;
+    padding: 5px 27px 5px 8px;
+    cursor: pointer;
+    background: #fff url('../images/dropdown-arrow.png') no-repeat right 8px center;
+    color: #333;
+    overflow: hidden;
+    /*text-shadow: 1px 1px #adadad;*/
+}
+
+.jq-droplist-select:hover,
+.jq-droplist-select.focus {
+    background-color: #fff;
+    border-color: #aaa;
+}
+
+.jq-droplist-select:active {
+    background-color: #f5f5f5;
+    border-color: #aaa;
+}
+
+.jq-droplist-select.correct,
+.jq-droplist-select.wrong {
+    color: #fff;
+    background-image: url('../images/dropdown-arrow-highlighted.png');
+}
+
+.jq-droplist-select.correct {
+    background-color: #add166;
+    border-color: #add166;
+}
+
+.jq-droplist-select.correct.focus {
+    border-color: #9cc161;
+}
+
+.jq-droplist-select.wrong {
+    background-color: #f58e8e;
+    border-color: #f58e8e;
+}
+
+.jq-droplist-select.wrong:hover,
+.jq-droplist-select.wrong.focus {
+    border-color: #db7f7f;
+}
+
+.jq-droplist-items {
+    display: none;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.jq-droplist-items li {
+    cursor: pointer;
+    display: block;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    padding: 0 5px;
+}
+
+.jq-droplist-items li:hover,
+.jq-droplist-items li.selected {
+    background-color: #ffffd9;
+}
+
+.jq-droplist-items li:active {
+    background-color: #edfad4;
+}
+
+.jq-droplist-items li.current {
+    background-image: url('../images/selected-mark.png');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
 }
