@@ -7,7 +7,7 @@
 
 body {
     padding: 10px;
-    font-family: 'Calibri';
+    font-family: 'Calibri', sans-serif;
 }
 
 .test-instruction-container {
@@ -109,13 +109,11 @@ body {
     cursor: pointer;
     display: block;
     clear: both;
-    padding: 0;
     margin: 0;
     height: 20px;
     padding: 0 5px;
 }
 
-.jq-droplist-items li:hover,
 .jq-droplist-items li.selected {
     background-color: #ffffd9;
 }
